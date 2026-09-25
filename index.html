@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+	Github: https://github.com/frosmoon
+	File: index.html
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            background-color: beige;
+            width: max-content;
+            height: max-content;
+        }
+
+        html::-webkit-scrollbar{
+            display: none;
+        }
+
+        input,
+        button,
+        label {
+            padding: 10px;
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        button {
+            border: none;
+            background: #084cdf;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+        }
+
+        .drop-container {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px dashed #555;
+            color: #444;
+            cursor: pointer;
+            transition: background .2s ease-in-out, border .2s ease-in-out;
+        }
+
+        .drop-container:hover,
+        .drop-container.drag-active {
+            background: #eee;
+            border-color: #111;
+        }
+
+        .drop-container:hover .drop-title,
+        .drop-container.drag-active .drop-title {
+            color: #222;
+        }
+
+        .drop-title {
+            color: #444;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            transition: color .2s ease-in-out;
+        }
+
+        input[type=file] {
+            width: 350px;
+            max-width: 100%;
+            color: #444;
+            padding: 5px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #555;
+        }
+
+        input[type=file]::file-selector-button {
+            margin-right: 20px;
+            border: none;
+            background: #084cdf;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background .2s ease-in-out;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background: #0d45a5;
+        }
+    </style>
+    <link rel="stylesheet" href="./sweetalert2.min.css">
+    <script src="./sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <label for="export">Export</label>
+    <button type="button" id="export">Export all tabs</button>
+    <br>
+
+
+    <label for="images" class="drop-container" id="dropcontainer">
+        <span class="drop-title" id="drop-text">Drop files here</span>
+        or
+        <input type="file" id="file" accept=".json, .txt" required multiple>
+    </label>
+
+</body>
+
+</html>
+<script src="script.js"></script>
