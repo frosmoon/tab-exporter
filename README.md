@@ -10,32 +10,19 @@ Quickly copy or save exported tab information
 
 Lightweight and easy to use
 
-[Add any other features here]
-
 Installation
 From source
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/frosmoon/tab_exporter.git
+cd tab_exporter
 
-
-Install dependencies:
-
-npm install
-
-
-Then start/build the project:
-
-npm run build
-
-
-[Add the actual installation instructions for your project here.]
+Install it as a Chrome Extension after having enabled 'Developer Mode' on the chrome://extension page.
 
 Usage
 
-[Explain the simplest way to use Tab Exporter.]
+Just click on the icon shows on the extension area and just click 'Export'.
 
 For example:
 
@@ -54,34 +41,8 @@ Format	Description
 [TXT]	[Description]
 [CSV]	[Description]
 [JSON]	[Description]
+
 Screenshots
-
-[Add screenshots/GIFs here.]
-
-Development
-
-Clone the repository and install the dependencies:
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
-npm install
-
-
-Run the development version:
-
-npm run dev
-
-
-Run tests:
-
-npm test
-
-
-Build the project:
-
-npm run build
-
-Contributing
 
 Contributions, bug reports, and suggestions are welcome.
 
@@ -89,4 +50,4 @@ See CONTRIBUTING.md for more information.
 
 License
 
-This project is licensed under the [LICENSE NAME] License. See LICENSE for details.
+This project is licensed under the MIT License. See LICENSE for details.
